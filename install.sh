@@ -60,7 +60,7 @@ echo -e "\033[32m 休息3秒 \033[0m"
 sleep 3s
 #编译安装nginx
 cd ../nginx-1.16.1
-./configure  --with-http_stub_status_module  --with-http_ssl_module  --prefix=/home/runner/${name}/nginx  --with-pcre=/home/runner/${name}/pcre-8.43  --with-openssl=/home/runner/${name}/openssl-1.0.2s  --with-zlib=/home/runner/${name}/zlib-1.2.11
+./configure  --with-http_stub_status_module  --with-http_ssl_module  --with-http_gzip_static_module  --prefix=/home/runner/${name}/nginx  --with-pcre=/home/runner/${name}/pcre-8.43  --with-openssl=/home/runner/${name}/openssl-1.0.2s  --with-zlib=/home/runner/${name}/zlib-1.2.11
 echo -e "\033[32m 正在编译nginx \033[0m"
 make
 echo -e "\033[32m 完成 \033[0m"
