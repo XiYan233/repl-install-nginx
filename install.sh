@@ -1,6 +1,6 @@
 #!/bin/bash
 read -p "请输入repl项目名：" name
-echo -e "\033[32m repl项目名为：${r} \033[0m"
+echo -e "\033[32m repl项目名为：${name} \033[0m"
 echo -e "\033[32m 正在下载解压pcre,zlib,openssl,nginx \033[0m"
 #下载解压pcre
 wget https://ftp.pcre.org/pub/pcre/pcre-8.43.tar.gz
